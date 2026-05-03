@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C. Club del Café — Café Premium de Origen</title>
+  <meta name="description" content="C. Club del Café. Granos selectos, tueste artesanal y una experiencia premium en cada taza." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-truck"></i> Envío gratis en compras superiores a $80</span>
+      <span class="topbar-divider">|</span>
+      <span><i class="fa-solid fa-mug-hot"></i> Tueste fresco semanal</span>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="C. Club del Café">
+        <span class="logo-mark">C.</span>
+        <span class="logo-text">
+          <span class="logo-line">CLUB DEL</span>
+          <span class="logo-line gold">CAFÉ</span>
+        </span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="shop.html">Tienda</a>
+        <a href="#origenes">Orígenes</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn" aria-label="Cuenta"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Carrito">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menú"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="dash"></span> Edición Premium 2026</span>
+        <h1 class="hero-title">El arte del café<br/><span class="italic gold">en cada sorbo.</span></h1>
+        <p class="hero-sub">Granos selectos de las mejores fincas del mundo, tostados artesanalmente para llevarte una experiencia sensorial inigualable.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-primary">Comprar ahora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#destacados" class="btn btn-ghost">Descubrir colección</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+25</strong><span>Variedades</span></div>
+          <div><strong>12</strong><span>Países de origen</span></div>
+          <div><strong>4.9★</strong><span>Calificación</span></div>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="hero-card-img"></div>
+        <div class="hero-card-info">
+          <span class="badge">Más vendido</span>
+          <h3>Etíope Yirgacheffe</h3>
+          <p>Notas a jazmín, bergamota y limón.</p>
+          <div class="hero-card-foot">
+            <span class="price">$32.00</span>
+            <a href="shop.html" class="mini-btn">Ver <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span> Scroll</div>
+  </section>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>ORIGEN ÚNICO</span><span>•</span><span>TUESTE ARTESANAL</span><span>•</span><span>COMERCIO JUSTO</span><span>•</span><span>ENTREGA RÁPIDA</span><span>•</span><span>EDICIÓN LIMITADA</span><span>•</span><span>ORIGEN ÚNICO</span><span>•</span><span>TUESTE ARTESANAL</span><span>•</span><span>COMERCIO JUSTO</span><span>•</span><span>ENTREGA RÁPIDA</span><span>•</span><span>EDICIÓN LIMITADA</span><span>•</span>
+    </div>
+  </div>
+  <section class="section" id="destacados">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><span class="dash"></span> Selección</span>
+          <h2 class="section-title">Productos <span class="italic gold">destacados</span></h2>
+        </div>
+        <a href="shop.html" class="link-arrow">Ver toda la tienda <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="carousel" id="featuredCarousel">
+        <button class="carousel-arrow prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="carousel-track" id="featuredTrack"></div>
+        <button class="carousel-arrow next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <section class="section benefits-section" id="experiencia">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow center"><span class="dash"></span> Por qué elegirnos <span class="dash"></span></span>
+        <h2 class="section-title">Una experiencia <span class="italic gold">premium</span></h2>
+        <p class="section-sub">Cuidamos cada detalle del proceso, desde el grano hasta tu taza, para que vivas una experiencia inolvidable.</p>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit reveal"><div class="benefit-icon"><i class="fa-solid fa-mountain"></i></div><h3>Origen seleccionado</h3><p>Granos cultivados a más de 1.500 m.s.n.m. en las mejores fincas del mundo.</p></article>
+        <article class="benefit reveal"><div class="benefit-icon"><i class="fa-solid fa-fire"></i></div><h3>Tueste artesanal</h3><p>Tostado en pequeñas cantidades para maximizar aroma, cuerpo y sabor.</p></article>
+        <article class="benefit reveal"><div class="benefit-icon"><i class="fa-solid fa-leaf"></i></div><h3>100% sostenible</h3><p>Trabajamos directamente con productores en comercio justo y prácticas verdes.</p></article>
+        <article class="benefit reveal"><div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div><h3>Entrega rápida</h3><p>Empacado al vacío justo después del tueste y enviado a tu puerta.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section origin-section" id="origenes">
+    <div class="container origin-grid">
+      <div class="origin-image reveal" aria-hidden="true"></div>
+      <div class="origin-content reveal">
+        <span class="eyebrow"><span class="dash"></span> Nuestros orígenes</span>
+        <h2 class="section-title">Del grano <span class="italic gold">a tu taza.</span></h2>
+        <p>Recorremos el mundo para descubrir microlotes únicos: desde las altas montañas de Etiopía hasta los valles de Colombia, pasando por las tierras volcánicas de Guatemala. Cada cosecha cuenta una historia, y nosotros la llevamos hasta ti, intacta.</p>
+        <ul class="origin-list">
+          <li><span>01</span> Selección manual del grano</li>
+          <li><span>02</span> Tueste de precisión</li>
+          <li><span>03</span> Empaque al vacío</li>
+          <li><span>04</span> Entrega fresca</li>
+        </ul>
+        <a href="shop.html" class="btn btn-primary">Explorar orígenes <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow center"><span class="dash"></span> Testimonios <span class="dash"></span></span>
+        <h2 class="section-title">Lo que dicen <span class="italic gold">nuestros clientes</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>"Una experiencia totalmente nueva. El aroma llena la casa y el sabor es excepcional. No volveré a comprar otro café."</p><div class="testimonial-author"><div class="avatar">M</div><div><strong>María González</strong><span>Cliente verificada</span></div></div></article>
+        <article class="testimonial reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>"El empaque, la calidad, la atención al detalle. Se nota el amor por el café en cada bolsa que recibo."</p><div class="testimonial-author"><div class="avatar">J</div><div><strong>Juan Restrepo</strong><span>Cliente verificado</span></div></div></article>
+        <article class="testimonial reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>"El Yirgacheffe es una joya. Notas florales increíbles. Llevo 6 meses suscrita y cada mes sorprende."</p><div class="testimonial-author"><div class="avatar">A</div><div><strong>Andrea López</strong><span>Suscriptora</span></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2>Únete al <span class="italic gold">Club</span></h2>
+      <p>Recibe novedades, ediciones limitadas y un 10% de descuento en tu primera compra.</p>
+      <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Suscrito';">
+        <input type="email" placeholder="tu@correo.com" required />
+        <button type="submit">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">C.</span>
+          <span class="logo-text"><span class="logo-line">CLUB DEL</span><span class="logo-line gold">CAFÉ</span></span>
+        </a>
+        <p>Café premium de origen, tostado artesanalmente para los verdaderos amantes del buen café.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Tienda</h4><a href="shop.html">Todos los cafés</a><a href="shop.html">Edición limitada</a><a href="shop.html">Suscripciones</a><a href="shop.html">Accesorios</a></div>
+      <div class="footer-col"><h4>Compañía</h4><a href="#">Sobre nosotros</a><a href="#origenes">Orígenes</a><a href="#">Sostenibilidad</a><a href="#">Blog</a></div>
+      <div class="footer-col"><h4>Contacto</h4><a href="mailto:hola@clubdelcafe.com"><i class="fa-regular fa-envelope"></i> hola@clubdelcafe.com</a><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +1 (234) 567-890</a><a href="#"><i class="fa-solid fa-location-dot"></i> Av. Premium 123, CDMX</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 C. Club del Café. Todos los derechos reservados.</span><span>Hecho con <i class="fa-solid fa-heart" style="color:var(--gold)"></i> para los amantes del café.</span></div></div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
