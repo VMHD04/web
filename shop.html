@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda — C. Club del Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span><i class="fa-solid fa-truck"></i> Envío gratis en compras superiores a $80</span><span class="topbar-divider">|</span><span><i class="fa-solid fa-mug-hot"></i> Tueste fresco semanal</span></div></div>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">C.</span><span class="logo-text"><span class="logo-line">CLUB DEL</span><span class="logo-line gold">CAFÉ</span></span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="shop.html" class="active">Tienda</a>
+        <a href="index.html#origenes">Orígenes</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        <button class="icon-btn menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow"><span class="dash"></span> Catálogo completo</span>
+      <h1 class="page-title">Nuestra <span class="italic gold">tienda</span></h1>
+      <p>Explora nuestra selección de cafés de especialidad, ediciones limitadas y accesorios premium.</p>
+    </div>
+  </section>
+  <section class="shop">
+    <div class="container shop-grid">
+      <aside class="filters" id="filters">
+        <div class="filter-group">
+          <h4>Categoría</h4>
+          <label><input type="checkbox" class="filter-cat" value="all" checked /> Todos</label>
+          <label><input type="checkbox" class="filter-cat" value="grano" /> Café en grano</label>
+          <label><input type="checkbox" class="filter-cat" value="molido" /> Café molido</label>
+          <label><input type="checkbox" class="filter-cat" value="capsulas" /> Cápsulas</label>
+          <label><input type="checkbox" class="filter-cat" value="accesorios" /> Accesorios</label>
+        </div>
+        <div class="filter-group">
+          <h4>Tipo de café</h4>
+          <label><input type="checkbox" class="filter-type" value="arabica" /> Arábica</label>
+          <label><input type="checkbox" class="filter-type" value="robusta" /> Robusta</label>
+          <label><input type="checkbox" class="filter-type" value="blend" /> Blend</label>
+          <label><input type="checkbox" class="filter-type" value="descafeinado" /> Descafeinado</label>
+        </div>
+        <div class="filter-group">
+          <h4>Precio</h4>
+          <div class="price-range">
+            <input type="range" id="priceRange" min="0" max="100" value="100" />
+            <div class="price-labels"><span>$0</span><span id="priceMax">$100</span></div>
+          </div>
+        </div>
+        <button class="btn btn-ghost" id="clearFilters" style="width:100%">Limpiar filtros</button>
+      </aside>
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <span id="resultCount">0 productos</span>
+          <div class="shop-toolbar-right">
+            <button class="filter-toggle" id="filterToggle"><i class="fa-solid fa-sliders"></i> Filtros</button>
+            <select id="sortBy">
+              <option value="featured">Destacados</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="name">Nombre A-Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">C.</span><span class="logo-text"><span class="logo-line">CLUB DEL</span><span class="logo-line gold">CAFÉ</span></span></a>
+        <p>Café premium de origen, tostado artesanalmente.</p>
+        <div class="socials"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div>
+      </div>
+      <div class="footer-col"><h4>Tienda</h4><a href="shop.html">Todos</a><a href="shop.html">Edición limitada</a><a href="shop.html">Accesorios</a></div>
+      <div class="footer-col"><h4>Compañía</h4><a href="#">Sobre nosotros</a><a href="#">Blog</a></div>
+      <div class="footer-col"><h4>Contacto</h4><a href="mailto:hola@clubdelcafe.com">hola@clubdelcafe.com</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 C. Club del Café.</span></div></div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

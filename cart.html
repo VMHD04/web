@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito — C. Club del Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span><i class="fa-solid fa-lock"></i> Compra segura · Pago encriptado</span></div></div>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">C.</span><span class="logo-text"><span class="logo-line">CLUB DEL</span><span class="logo-line gold">CAFÉ</span></span></a>
+      <nav class="nav" id="nav"><a href="index.html">Inicio</a><a href="shop.html">Tienda</a><a href="index.html#origenes">Orígenes</a><a href="index.html#contacto">Contacto</a></nav>
+      <div class="header-actions">
+        <a href="cart.html" class="icon-btn cart-btn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        <button class="icon-btn menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-hero small">
+    <div class="container">
+      <span class="eyebrow"><span class="dash"></span> Tu pedido</span>
+      <h1 class="page-title">Carrito de <span class="italic gold">compras</span></h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container cart-grid" id="cartContainer"></div>
+  </section>
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-mark">C.</span><span class="logo-text"><span class="logo-line">CLUB DEL</span><span class="logo-line gold">CAFÉ</span></span></a><p>Café premium de origen.</p><div class="socials"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></div>
+      <div class="footer-col"><h4>Tienda</h4><a href="shop.html">Todos</a></div>
+      <div class="footer-col"><h4>Compañía</h4><a href="#">Sobre nosotros</a></div>
+      <div class="footer-col"><h4>Contacto</h4><a href="mailto:hola@clubdelcafe.com">hola@clubdelcafe.com</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 C. Club del Café.</span></div></div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/cart-page.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
